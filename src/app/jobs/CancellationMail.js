@@ -16,7 +16,7 @@ class CancellationMail {
             template: 'cancellation',
             context: {
                 provider: appointment.provider.name,
-                user: appointment.provider.name,
+                user: appointment.user.name,
                 date: format(
                     parseISO(appointment.date),
                     "'dia' dd 'de' MMMM', às' H:mm'h'",
